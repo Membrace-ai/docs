@@ -7,10 +7,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   noIndex: true,
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Membrace Docs',
   url: 'https://membrace.ai/',
   baseUrl: '/',
+  projectName: 'docs',
+  organizationName: 'membrace-ai',
+  trailingSlash: false, 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'https://static.tildacdn.com/tild3633-6362-4534-a336-633434356434/favicon-2.ico',
@@ -80,10 +82,6 @@ const config = {
               {
                 label: 'Media',
                 to: 'https://membrace.ai/media',
-              },
-              {
-                label: 'Documentation',
-                to: '/docs/index',
               },
               {
                 label: 'LinkedIn',

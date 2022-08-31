@@ -23,10 +23,6 @@
     "message": "Media",
     "description": "The label of footer link with label=Media linking to https://membrace.ai/media"
   },
-  "link.item.label.Documentation": {
-    "message": "Documentation",
-    "description": "The label of footer link with label=Documentation linking to /docs/index"
-  },
   "link.item.label.LinkedIn": {
     "message": "LinkedIn",
     "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/company/membraceapi/"
