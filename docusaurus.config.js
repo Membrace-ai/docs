@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   noIndex: true,
   title: 'Membrace Docs',
-  url: 'https://membrace.ai/',
-  baseUrl: '/',
+  url: 'https://membrace-ai.github.io/',
+  baseUrl: '/docs/',
   projectName: 'docs',
   organizationName: 'membrace-ai',
   trailingSlash: false, 
