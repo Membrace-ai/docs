@@ -1,0 +1,4 @@
+.details {
+    --docusaurus-details-decoration-color: var(--ifm-alert-border-color);
+    background-color: rgb(0 0 0 / 0%);
+}
