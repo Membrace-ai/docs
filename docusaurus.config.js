@@ -52,11 +52,11 @@ const config = {
       },
       navbar: {
         style: 'dark',
-        title: 'Membrace',
-        /*logo: {
+        logo: {
           alt: 'Membrace',
           src: 'https://doc-binary.s3.yandex.net/src/membrace/logo-dark.svg',
-        },*/
+          href: 'https://membrace.ai/'
+        },
         items: [
           {
             type: 'doc',
