@@ -2,6 +2,16 @@
 slug: /
 ---
 
-# Membrace
+import DocCardList from '@theme/DocCardList';
 
-Membrace is a service for moderating user content (texts, images, and links). You can send us a text, and we'll send you a list of violations in it. A flexible approach to content moderation allows us to provide you with effective ready-to-go solutions.
+# How to get a solution
+
+Membrace is a flexible content moderation platform that combines ML and Human-In-The-Loop into effective ready-to-go solutions.
+
+To start using Membrace:
+
+1. Provide the details of your task and [get a demo version](demo.md) to get to know the platform.
+2. [Launch stream processing](commissioning.md).
+
+<DocCardList />
+

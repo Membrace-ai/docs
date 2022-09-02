@@ -9,7 +9,7 @@ const config = {
   noIndex: true,
   title: 'Membrace Docs',
   url: 'https://membrace-ai.github.io/',
-  baseUrl: '/docs/',
+  baseUrl: '/',
   projectName: 'docs',
   organizationName: 'membrace-ai',
   trailingSlash: false, 
@@ -61,13 +61,13 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {
+          /*{
             type: 'localeDropdown',
             position: 'right',
-          },
+          },*/
         ],
       },
-      footer: {
+      /*footer: {
         style: 'dark',
         links: [
           {
@@ -143,7 +143,7 @@ const config = {
             ],
           },
         ],
-      },
+      },*/
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
