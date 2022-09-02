@@ -1,3 +1,6 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # FAQ
 
 <details><summary>Как узнать расходы по проекту?</summary>
