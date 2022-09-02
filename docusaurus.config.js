@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   noIndex: true,
-  title: 'Membrace Docs',
+  title: 'Membrace Documentation',
   url: 'https://docs.membrace.ai/',
   baseUrl: '/',
   projectName: 'docs',
