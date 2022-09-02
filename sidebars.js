@@ -1,7 +1,6 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   docsSidebar: [
-    'index',
     { 
       type: 'category',
       label: 'How to get a solution',
@@ -17,7 +16,6 @@ const sidebars = {
         'commissioning'
       ],
     },
-    'how-it-work',
     'faq',
     'feedback'
   ],

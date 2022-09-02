@@ -57,17 +57,17 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'index',
+            docId: '/',
             position: 'left',
             label: 'Docs',
           },
-          {
+          /*{
             type: 'localeDropdown',
             position: 'right',
-          },
+          },*/
         ],
       },
-      footer: {
+      /*footer: {
         style: 'dark',
         links: [
           {
@@ -143,7 +143,7 @@ const config = {
             ],
           },
         ],
-      },
+      },*/
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
