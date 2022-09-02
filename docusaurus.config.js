@@ -9,7 +9,7 @@ const config = {
   noIndex: true,
   title: 'Membrace Docs',
   url: 'https://membrace-ai.github.io/',
-  baseUrl: '/docs/',
+  baseUrl: '/',
   projectName: 'docs',
   organizationName: 'membrace-ai',
   trailingSlash: false, 
