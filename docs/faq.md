@@ -10,7 +10,7 @@ import TabItem from '@theme/TabItem';
 <Tabs>
   <TabItem value="ui" label="In the web interface">
 
-In your account, go to **Profile** → **Expenses** and select the date and project you want to check.
+In your account, go to **Profile** → **Expenses** and select the date and project you want to check.
 
   </TabItem>
   <TabItem value="api" label="Via the API">
