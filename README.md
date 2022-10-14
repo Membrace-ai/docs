@@ -28,4 +28,4 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
-It will be deployed automatically after merge to `master`.
+Docs will be deployed automatically after merge to `master`.
