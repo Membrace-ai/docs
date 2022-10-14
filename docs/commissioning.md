@@ -5,7 +5,7 @@ Once the project is approved and ready to launch, you can start integration via 
 <details><summary>Step 1. Sign up.</summary>
 
 
-1. Go to the [sign-up page](https://passport.yandex.com/auth?origin=toloka_requesters&retpath=https://toloka.yandex.com/signup/requester) and create an account:
+1. Go to the [sign-up page](https://passport.toloka.ai/auth/list?origin=toloka_requesters&retpath=https%3A%2F%2Fplatform.toloka.ai%2Fsignup%2Frequester%3FauthRole%3Drequester) and create an account:
 
 <details><summary>Using your Google account</summary>
 
@@ -66,7 +66,7 @@ Once the project is approved and ready to launch, you can start integration via 
 
 <details><summary>Step 3. Send us your login.</summary>
 
-   Send your consultant the login that you registered with, and we'll link your ready-to-go solution to it. You can find your login in your [profile](https://toloka.yandex.com/requester/profile).
+   Send your consultant the login that you registered with, and we'll link your ready-to-go solution to it. You can find your login in your [profile](https://platform.toloka.ai/requester/profile).
 
 </details>
 
@@ -100,7 +100,7 @@ Once the project is approved and ready to launch, you can start integration via 
 
 <details><summary>Step 5. Connect the API and get started.</summary>
 
-   1. Get an authorization token: on the **Integrations** tab in your [profile](https://toloka.yandex.com/requester/profile/integration), click **Get OAuth token**.
+   1. Get an authorization token: on the **Integrations** tab in your [profile](https://platform.toloka.ai/requester/profile), click **Get OAuth token**.
 
       <img src={require('./assets/get-oauth-token.png').default} alt="Get a token" width="626"/>
 
