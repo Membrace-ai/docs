@@ -106,16 +106,16 @@ Once the project is approved and ready to launch, you can start integration via 
 
    2. You are now ready to exchange data via the API — send your project data and receive moderation results:
 
-      - Use stream data processing (not batch processing). To learn more, see [Help](https://toloka.ai/ru/docs/toloka-apps/api/concepts/streaming-items.html).
+      - Use stream data processing (not batch processing). To learn more, see [Help](https://toloka.ai/docs/toloka-apps/api/concepts/streaming-items.html).
 
       - You'll need the project ID that you got in the previous step. In Help, the project ID corresponds to the `{app_project_id}` variable.
 
       :::info
 
       To learn more about the API, check the following pages:
-      - [Getting project information](https://toloka.ai/ru/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_get.html)
-      - [Getting labeling item information](https://toloka.ai/ru/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_item_id_get.html)
-      - [Getting a list of all project items](https://toloka.ai/ru/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_get.html)
+      - [Getting project information](https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_get.html)
+      - [Getting labeling item information](https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_item_id_get.html)
+      - [Getting a list of all project items](https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_get.html)
 
       :::
 
