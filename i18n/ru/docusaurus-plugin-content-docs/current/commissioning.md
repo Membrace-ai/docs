@@ -54,11 +54,11 @@
 
 		   <img src={require('./assets/promocode.png').default} alt="Введите и активируйте промокод" width="206"/>
 
-   :::info
-  
-   Для дальнейшего использования вам потребуется привязать ваш аккаунт к биллинговой системе. Инструкцию по привязке аккаунта можно посмотреть по [ссылке](https://toloka.ai/ru/docs/guide/concepts/budget.html).
+:::info информация
 
-   :::
+Для дальнейшего использования вам потребуется привязать ваш аккаунт к биллинговой системе. Инструкцию по привязке аккаунта можно посмотреть по [ссылке](https://toloka.ai/ru/docs/guide/concepts/budget.html).
+
+:::
 
 </details>
 
@@ -108,13 +108,13 @@
 
    - Вам понадобится ID проекта, полученный на предыдущем шаге. ID проекта в Справке соответствует переменная `{app_project_id}`.
 
-   :::info
+:::info информация
 
-  Дополнительную информацию по API можно посмотреть на страницах:
+Дополнительную информацию по API можно посмотреть на страницах:
   - [Получить информацию о проекте](https://toloka.ai/ru/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_get.html)
   - [Получить информацию об элементе разметки](https://toloka.ai/ru/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_item_id_get.html)
   - [Получить список всех элементов в проекте](https://toloka.ai/ru/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_get.html)
 
-   :::
+:::
 
 </details>
