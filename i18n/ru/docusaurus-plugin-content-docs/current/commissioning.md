@@ -5,7 +5,7 @@
 <details><summary>Шаг 1. Зарегистрируйтесь.</summary>
 
 1. Перейдите по [ссылке](https://passport.yandex.com/auth?origin=toloka_requesters&retpath=https://toloka.yandex.com/signup/requester) и создайте аккаунт:
-      	
+
 <details><summary>С помощью логина в Google</summary>
 
 1. В окне регистрации нажмите **Google**.
@@ -62,13 +62,13 @@
 
 </details>
 
-<details><summary>Шаг 3. Сообщите нам ваш логин.</summary> 
+<details><summary>Шаг 3. Сообщите нам ваш логин.</summary>
 
    Отправьте вашему консультанту логин, с которым вы зарегистрировались — мы привяжем к нему готовое решение для вашей задачи. Логин вы можете посмотреть в [профиле](https://toloka.yandex.com/requester/profile).
 
 </details>
 
-<details><summary>Шаг 4. Дайте название проекту.</summary> 
+<details><summary>Шаг 4. Дайте название проекту.</summary>
 
 1. Перейдите по ссылке, которую мы пришлем в ответ на письмо с логином.
 
@@ -96,19 +96,19 @@
 
 </details>
 
-<details><summary>Шаг 5. Подключите API и начните пользоваться.</summary> 
-	
+<details><summary>Шаг 5. Подключите API и начните пользоваться.</summary>
+
 1. Получите авторизационный токен: на вкладке **Integrations** вашего [профиля](https://toloka.yandex.com/requester/profile/integration) нажмите кнопку **Get OAuth token**.
 
-   <img src={require('./assets/get-oauth-token.png').default} alt="Получите токен" width="626"/>  
+   <img src={require('./assets/get-oauth-token.png').default} alt="Получите токен" width="626"/>
 
 2. Для обмена через API все готово — отправляйте данные для проекта и получайте результаты их модерации:
 
-   - Используйте потоковую обработку данных (не пакетную). Инструкцию смотрите [в Справке](https://toloka.ai/ru/docs/toloka-apps/api/concepts/streaming-items.html). 
+   - Используйте потоковую обработку данных (не пакетную). Инструкцию смотрите [в Справке](https://toloka.ai/ru/docs/toloka-apps/api/concepts/streaming-items.html).
 
    - Вам понадобится ID проекта, полученный на предыдущем шаге. ID проекта в Справке соответствует переменная `{app_project_id}`.
 
-:::info информация
+:::info
 
 Дополнительную информацию по API можно посмотреть на страницах:
   - [Получить информацию о проекте](https://toloka.ai/ru/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_get.html)
