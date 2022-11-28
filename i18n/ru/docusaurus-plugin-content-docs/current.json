@@ -6,13 +6,5 @@
   "sidebar.docsSidebar.category.How to get a solution": {
     "message": "Как получить решение задачи",
     "description": "The label for category How to get a solution in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.How to get a solution.link.generated-index.title": {
-    "message": "Как получить решение задачи",
-    "description": "The generated-index page title for category How to get a solution in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.How to get a solution.link.generated-index.description": {
-    "message": "Запросите демо и получите индивидуальное готовое решение",
-    "description": "The generated-index page description for category How to get a solution in sidebar docsSidebar"
   }
 }
