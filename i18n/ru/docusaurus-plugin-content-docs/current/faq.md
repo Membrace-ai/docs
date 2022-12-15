@@ -51,7 +51,7 @@ import TabItem from '@theme/TabItem';
 
 <details><summary>Как узнать сколько объектов размечено?</summary>
 
-В [личном кабинете](https://my.membrace.ai/) в блоке **Summary** отображаются сколько всего размечено объектов по всем вашим текущим проектам за последние 30 дней.
+В [личном кабинете](https://my.membrace.ai/) в блоке **Summary** отображаются сколько размечено объектов по всем вашим текущим проектам за последние 30 дней.
 
   <img src={require('./assets/moderated-all.png').default} alt="Всего размечено" width="500"/>
 
