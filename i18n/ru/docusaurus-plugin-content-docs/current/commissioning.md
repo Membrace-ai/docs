@@ -5,7 +5,7 @@
 <details><summary>Шаг 1. Зарегистрируйтесь.</summary>
 
 1. Перейдите по [ссылке](https://passport.yandex.com/auth?origin=toloka_requesters&retpath=https://toloka.yandex.com/signup/requester) и создайте аккаунт:
-      	
+
 <details><summary>С помощью логина в Google</summary>
 
 1. В окне регистрации нажмите **Google**.
@@ -44,31 +44,29 @@
 
       <img src={require('./assets/profile.png').default} alt="Перейдите в свой профиль" width="630"/>
 
-   1. Для быстрого старта воспользуйтесь промокодом:
+   1. Если у вас есть промокод воспользуйтесь им:
 
 	   1. Нажмите кнопку **Enter promo code**.
 
 	      <img src={require('./assets/enter-promo-code.png').default} alt="Нажмите кнопку для ввода промокода" width="307"/>
 
-	   1. Введите `TOLOKAKIT1` — после активации ваш баланс будет пополнен.
+	   1. В открывшемся окне введите промокод и нажмите кнопку **Activate**. После активации ваш баланс будет пополнен.
 
-		   <img src={require('./assets/promocode.png').default} alt="Введите и активируйте промокод" width="206"/>
+:::info информация
 
-   :::info
-  
-   Для дальнейшего использования вам потребуется привязать ваш аккаунт к биллинговой системе. Инструкцию по привязке аккаунта можно посмотреть по [ссылке](https://toloka.ai/ru/docs/guide/concepts/budget.html).
+Для дальнейшего использования вам потребуется привязать ваш аккаунт к биллинговой системе. Инструкцию по привязке аккаунта можно посмотреть по [ссылке](https://toloka.ai/ru/docs/guide/concepts/budget.html).
 
-   :::
+:::
 
 </details>
 
-<details><summary>Шаг 3. Сообщите нам ваш логин.</summary> 
+<details><summary>Шаг 3. Сообщите нам ваш логин.</summary>
 
    Отправьте вашему консультанту логин, с которым вы зарегистрировались — мы привяжем к нему готовое решение для вашей задачи. Логин вы можете посмотреть в [профиле](https://toloka.yandex.com/requester/profile).
 
 </details>
 
-<details><summary>Шаг 4. Дайте название проекту.</summary> 
+<details><summary>Шаг 4. Дайте название проекту.</summary>
 
 1. Перейдите по ссылке, которую мы пришлем в ответ на письмо с логином.
 
@@ -96,25 +94,25 @@
 
 </details>
 
-<details><summary>Шаг 5. Подключите API и начните пользоваться.</summary> 
-	
+<details><summary>Шаг 5. Подключите API и начните пользоваться.</summary>
+
 1. Получите авторизационный токен: на вкладке **Integrations** вашего [профиля](https://toloka.yandex.com/requester/profile/integration) нажмите кнопку **Get OAuth token**.
 
-   <img src={require('./assets/get-oauth-token.png').default} alt="Получите токен" width="626"/>  
+   <img src={require('./assets/get-oauth-token.png').default} alt="Получите токен" width="626"/>
 
 2. Для обмена через API все готово — отправляйте данные для проекта и получайте результаты их модерации:
 
-   - Используйте потоковую обработку данных (не пакетную). Инструкцию смотрите [в Справке](https://toloka.ai/ru/docs/toloka-apps/api/concepts/streaming-items.html). 
+   - Используйте потоковую обработку данных (не пакетную). Инструкцию смотрите [в Справке](https://toloka.ai/ru/docs/toloka-apps/api/concepts/streaming-items.html).
 
    - Вам понадобится ID проекта, полученный на предыдущем шаге. ID проекта в Справке соответствует переменная `{app_project_id}`.
 
-   :::info
+:::info
 
-  Дополнительную информацию по API можно посмотреть на страницах:
+Дополнительную информацию по API можно посмотреть на страницах:
   - [Получить информацию о проекте](https://toloka.ai/ru/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_get.html)
   - [Получить информацию об элементе разметки](https://toloka.ai/ru/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_item_id_get.html)
   - [Получить список всех элементов в проекте](https://toloka.ai/ru/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_get.html)
 
-   :::
+:::
 
 </details>

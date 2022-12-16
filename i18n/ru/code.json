@@ -40,23 +40,23 @@
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.admonition.note": {
-    "message": "note",
+    "message": "примечание",
     "description": "The default label used for the Note admonition (:::note)"
   },
   "theme.admonition.tip": {
-    "message": "tip",
+    "message": "совет",
     "description": "The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.danger": {
-    "message": "danger",
+    "message": "осторожно",
     "description": "The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
-    "message": "info",
+    "message": "информация",
     "description": "The default label used for the Info admonition (:::info)"
   },
   "theme.admonition.caution": {
-    "message": "caution",
+    "message": "внимание",
     "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
@@ -249,5 +249,9 @@
   "theme.docs.sidebar.expandButtonAriaLabel": {
     "message": "Развернуть сайдбар",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Теги",
+    "description": "The title of the tag list page"
   }
 }
