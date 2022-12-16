@@ -1,0 +1,20 @@
+{
+  "docsSidebar": [
+    {
+      "type": "category",
+      "label": "How to get a solution",
+      "collapsed": false,
+      "link": {
+        "type": "doc",
+        "id": "index"
+      },
+      "items": [
+        "demo",
+        "commissioning"
+      ]
+    },
+    "personal-account",
+    "faq",
+    "feedback"
+  ]
+}

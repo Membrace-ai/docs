@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   projectName: 'docs',
   organizationName: 'membrace-ai',
-  trailingSlash: false, 
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'https://static.tildacdn.com/tild3633-6362-4534-a336-633434356434/favicon-2.ico',
@@ -30,6 +30,12 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
+          lastVersion: 'current',
+          versions: {
+            current: {
+              badge: false
+            }
+          }
         },
         blog: false,
         theme: {
