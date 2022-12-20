@@ -46,21 +46,19 @@ Once the project is approved and ready to launch, you can start integration via 
 
       <img src={require('./assets/profile.png').default} alt="Go to your profile" width="630"/>
 
-   2. For a quick start, use our promo code:
+   2. If you have a promo code:
 
-   3. Click **Enter promo code**.
+	   1. Click **Enter promo code**.
 
-      <img src={require('./assets/enter-promo-code.png').default} alt="Click to enter promo code" width="307"/>
+         <img src={require('./assets/enter-promo-code.png').default} alt="Click to enter promo code" width="307"/>
 
-   4. Enter `TOLOKAKIT1`. Once it's activated, your balance will be topped up.
+	   1. In the window that opens, enter the promo code and click **Activate**. Once it's activated, your balance will be topped up.
 
-      <img src={require('./assets/promocode.png').default} alt="Enter and activate the promo code" width="206"/>
+:::info
 
-   :::info
+To continue using the service, you'll need to link your account to a billing system. To learn more about linking your account, check this [page](https://toloka.ai/ru/docs/guide/concepts/budget.html).
 
-   To continue using the service, you'll need to link your account to a billing system. To learn more about linking your account, check [this page](https://toloka.ai/docs/guide/concepts/budget.html).
-
-   :::
+:::
 
 </details>
 
