@@ -106,7 +106,7 @@
 
    - Вам понадобится ID проекта, полученный на предыдущем шаге. ID проекта в Справке соответствует переменная `{app_project_id}`.
 
-:::info
+:::info информация
 
 Дополнительную информацию по API можно посмотреть на страницах:
   - [Получить информацию о проекте](https://toloka.ai/ru/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_get.html)
