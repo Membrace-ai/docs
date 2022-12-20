@@ -1,78 +1,79 @@
-# Личный кабинет
+# Personal account
 
-В личном кабинете вы можете:
+In your personal account, you can:
 
-- отправить запрос на создание нового проекта;
+- Send a request to [create a new project](#new_project).
 
-- посмотреть общую статистику по всем проектам и по каждому отдельно.
+- View the general [statistics](#statistics) on all projects and on every separate project.
 
-## Вход в личный кабинет {#entrance}
+## Open your personal account {#entrance}
 
-1. Перейдите по ссылке https://my.membrace.ai/.
+1. Follow the [link](https://my.membrace.ai/).
 
-2. Введите адрес электронной почты и пароль.
+2. Enter your email and password.
 
-3. Нажмите кнопку **Continue**.
+3. Click **Continue**.
 
-## Статистика {#statistics}
+## Restore your password {#recover}
 
-В блоке **Summury** отображается общая статистика по вашим текущим проектам за последние 30 дней:
+If you forgot your password:
 
-- **moderated** — количество обработанных элементов разметки;
+1. Click **Forgot password**.
 
-- **spent** — затраченные средства.
+  <img src={require('./assets/forgot-password.png').default} alt="Restore your password" width="400"/>
 
-В блоке **Projects** можно посмотреть статистику отдельно по каждому проекту:
+2. Enter the email address that you used for registration.
 
-- **today** — количество обработанных элементов разметки за текущий день;
+3. Click **Continue**.
 
-- **month** — количество обработанных элементов разметки за текущий месяц;
+4. We'll send you the instructions on changing your password.
 
-- **spendig** — прогнозируемые затраты за текущий месяц (прогноз строится из расчета данных за последние 30 дней).
+## Create a new project {#new_project}
 
-Чтобы увидеть более подробную информацию по проекту, нажмите на его карточку. Помимо этого на странице детализации, вы можете:
+1. Open your [personal account](https://my.membrace.ai/).
 
-- Справа вверху в блоке **project config** узнать ID проекта, необходимый [для подключения API](https://toloka.ai/ru/docs/toloka-apps/api/concepts/streaming-items).
+2. Click **New Project**.
 
-  <img src={require('./assets/api-project-id.png').default} alt="ID проекта" width="600"/>
+3. Fill out the form:
 
-- Посмотреть графики:
+	3.1 Enter the project name.
 
-	- **Moderated items by time** — количество размеченных элементов по дням;
+	3.2 Specify the business area, content type, and approximate number of labeling elements per month. This information is optional.
 
-	- **Latancy** — медианное время разметки одного элемента по дням;
+	3.3 Briefly describe what you want to do.
 
-	- **Quality** — качество разметки по дням.
+3. Click **Submit**. A project card with the __pending__ status will be created in your personal account.
+
+4. A Membrace specialist will contact you to discuss the details and find a suitable solution.
+
+## Statistics {#statistics}
+
+In the **Summary** section, you can view general statistics on your current projects for the past 30 days.
+
+- **moderated**: The number of elements processed.
+
+- **spent**: The amount spent.
+
+You can view general statistics on every project in the project cards in the **Projects** section:
+
+- **today**: The number of elements processed today.
+
+- **month**: The number of elements processed this month.
+
+- **spending**: Estimated expenses this month (the estimate is based on data for the past 30 days).
+
+To view the project details, click its card. On the project page, you can:
+
+- Find out the project ID for [connecting the API](https://toloka.ai/ru/docs/toloka-apps/api/concepts/streaming-items) in the **project config** section on the top right.
+
+  <img src={require('./assets/api-project-id.png').default} alt="Project ID" width="500"/>
+
+- View charts that show detailed statistics:
+
+	- **Moderated items by time**: The number of labeled elements by days.
+
+	- **Latency**: The median time of labeling one element by days.
+
+	- **Quality**: The labeling quality by days.
 
 
-## Создание нового проекта {#new_project}
-
-1. Войдите в личный кабинет.
-
-2. Нажмите **New Project**.
-
-3. Заполните заявку:
-
-	3.1 Дайте название проекту.
-
-	3.2 По желанию укажите сферу бизнеса, тип контента и ориентировочное количество элементов разметки за месяц.
-
-	3.3 Кратко опишите, что вы хотите сделать.
-
-3. Нажмите **Submit**. В личном кабинете будет создана карточка проекта со статусом __pending__.
-
-4. С вами свяжется наш сотрудник, чтобы обсудить детали и подобрать подходящее решение для вашей задачи.
-
-## Восстановление пароля {#recover}
-
-Если вы забыли пароль для входа:
-
-1. Нажмите **Forgot password**.
-
-  <img src={require('./assets/forgot-password.png').default} alt="Восстановление пароля" width="600"/>
-
-2. В открывшемся окне введите адрес электронной почты, который вы давали при регистрации.
-
-3. Нажмите кнопку **Continue**.
-
-4. Мы вышлем вам инструкции по замене пароля.
