@@ -4,7 +4,7 @@ Welcome to the membrace.ai docs.
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-### Requirements
+### First steps
 
 You need to have [yarn](https://classic.yarnpkg.com/en/docs/install) or [npm](https://nodejs.org/en/) installed. In all commands below we use `yarn`, but you can use `npm` instead.
 
