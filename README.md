@@ -4,28 +4,45 @@ Welcome to the membrace.ai docs.
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-### Installation
+### First steps
+
+You need to have [yarn](https://classic.yarnpkg.com/en/docs/install) or [npm](https://nodejs.org/en/) installed. In all commands below we use `yarn`, but you can use `npm` instead.
+
+Clone this git repository to your computer and install all requirements:
 
 ```
-$ yarn
+git clone git@github.com:Membrace-ai/docs.git
+cd docs
+yarn run install
 ```
 
-### Local Development
+### Build the docs locally
+
+To build only current English version run this command:
 
 ```
-$ yarn start
+yarn run start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Build
+To build all versions and languages run:
 
 ```
-$ yarn build
+yarn run build
+yarn run serve
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+### Deploy the docs to the production
 
-### Deployment
+If you have access to the deployment, checkout the branch you want to deploy and run:
 
-It will be deployed automatically after merge to `master`.
+```
+git checkout master
+git pull
+USE_SSH=true run deploy
+```
+
+### Problems?
+
+Read the [Docusaurus documentation](https://docusaurus.io/docs/).
