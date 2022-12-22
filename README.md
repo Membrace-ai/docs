@@ -33,9 +33,9 @@ yarn run build
 yarn run serve
 ```
 
-### Deploy the docs to production
+### Deploy the docs to the production
 
-If you have access to the deployment, checkout the branch you want to deploy and run :
+If you have access to the deployment, checkout the branch you want to deploy and run:
 
 ```
 git checkout master
