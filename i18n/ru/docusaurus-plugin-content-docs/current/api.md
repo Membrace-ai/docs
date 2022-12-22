@@ -1,16 +1,18 @@
-# Before you begin
+# Integrate via API
+
+## Before you begin
 
 Your Account Manager will provide you with:
 1. `token`. This token will let you access your projects and data.
 2. `project_ID`. This ID will be used to associate the content you send to Membrace with your specific project, which in turn lets us know what kind of moderation to perform on the content.
 
-# Sending Content for Moderation
+## Sending Content for Moderation
 
-## Synchronous API
+### Synchronous API
 
 Sync API implies that as soon as you send us your content, you immediately some kind of response. Responses may vary depending on the specifics of your project.
 
-### Structure
+#### Structure
 
 ```
 POST /v1/item/process
@@ -18,7 +20,7 @@ Host: https://api.membrace.ai
 Authorization: <token>
 ```
 
-### Payload
+#### Payload
 
 ```json
 {
@@ -33,7 +35,7 @@ Authorization: <token>
 - `project_version` — String. Required. Version of the project, initial value "1".
 - `content` — JSON. Required. Your content, structured in accordance with your project.
 
-### Example
+#### Example
 
 ```json
 {
@@ -46,7 +48,7 @@ Authorization: <token>
 }
 ```
 
-### Response
+#### Response
 
 ```json
 {
@@ -69,7 +71,7 @@ Authorization: <token>
 - `result` — JSON. Result of moderation, structure specified for your project.
 - `error` — JSON. Optional. Error message. Appears only if `status` returned `FAILED`.
 
-### Example (`status` value `SUCCESS`)
+#### Example (`status` value `SUCCESS`)
 
 ```json
 {
@@ -95,7 +97,7 @@ Authorization: <token>
     }
 }
 ```
-### Example (`status` value `FAILED`)
+#### Example (`status` value `FAILED`)
 
 ```json
 {
