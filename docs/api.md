@@ -24,7 +24,7 @@ Authorization: <token>
 
 ```json
 {
-    "request_id": "1",
+    "request_id": "42",
     "project_id": <project_id>,
     "project_version": "1",
     "content": <content>
