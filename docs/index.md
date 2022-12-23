@@ -11,7 +11,7 @@ Membrace is a flexible content moderation platform that combines ML and Human-In
 To start using Membrace:
 
 1. Provide the details of your task and [get a demo version](demo.md) to get to know the platform.
-2. [Launch stream processing](commissioning.md).
+2. [Use the Membrace API.](api.md)
 
 <DocCardList />
 

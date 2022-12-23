@@ -6,10 +6,8 @@ const sidebars = {
       label: 'How to get a solution',
       collapsed: false,
       link: {type: 'doc', id: 'index'},
-      items: ['demo', 'commissioning'],
+      items: ['demo', 'api'],
     },
-    'personal-account',
-    'faq',
     'feedback'
   ],
 };
