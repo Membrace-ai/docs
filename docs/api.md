@@ -1,9 +1,14 @@
-# Before you begin
+---
+toc_max_heading_level: 4
+---
+
+# Integrate via API
+
+## Before you begin
 Your Account Manager will provide you with:
 1. `token`. This token will let you access your projects & data;
 2. `project_ID`. This ID will be used to associate the content you send to Membrace with your specific project, which in turn lets us know what kind of moderation to perform on the content.
 
-# Sending Content for Moderation
 ## Synchronous API
 Sync API implies that as soon as you send us your content, you immediately some kind of response. Responses may vary depending on the specifics of your project.
 ### Structure
@@ -158,16 +163,19 @@ Response (failed)
 ## Asynchronous API
 Async API requires you to make a separate request in order to receive moderation results.
 In our Async API, there are two separate requests:
-- Event 1: you send the content to Membrace;
-- Event 2: you request results for processed items.
-### Structure
+- [Event 1](#sending-async): you send the content to Membrace;
+- [Event 2](#retrieving-async): you request results for processed items.
+
+### 1. Sending Content for Moderation {#sending-async}
+
+#### Structure
 ```
 POST /v1/item/process
 Host: https://api.membrace.ai
 Authorization: <token>
 ```
 
-### Payload
+#### Payload
 ```json
 {
     "request_id": "42",
@@ -181,7 +189,7 @@ Authorization: <token>
 * `project_version` - String. Required. Version of the project, initial value "1";
 * `content` - JSON. Required. Your content, structured in accordance with your project.
 
-### Response
+#### Response
 ```json
 {
     "request_id": "42",
@@ -196,8 +204,8 @@ Authorization: <token>
 * `status` - String. Moderation task status (only `PENDING` value for Asynchronous API);
 
 
-### Examples
-#### Text (project_id=text)
+#### Examples
+##### Text (project_id=text)
 Request:
 ```json
 {
@@ -221,7 +229,7 @@ Response:
 }
 ```
 
-#### Image (project_id=image)
+##### Image (project_id=image)
 Request:
 ```json
 {
@@ -245,7 +253,7 @@ Response:
 }
 ```
 
-### Retrieving Results
+### 2. Retrieving Results {#retrieving-async}
 In order to get the results, it's recommended that you GET them sorted by time of completion. You will receive the first N items as the response, with N depending on specifics of your project.
 In order to receive the next items, please save the `next_results` & use it as the `next_results` variable.
 You can skip this variable on the first query or use datetime filters.
@@ -255,7 +263,7 @@ Host: https://api.membrace.ai
 Authorization: <token>
 ```
 
-### Response
+#### Response
 ```json
 {
     "items": [<list_of_items>],
@@ -265,7 +273,7 @@ Authorization: <token>
 ```
 * `has_more` – if the response contains more than the initial 100 items, this value will be set to `true`
 
-### Example
+#### Example
 ```json
 {
     "items": [
