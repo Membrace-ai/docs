@@ -3,6 +3,15 @@ Your Account Manager will provide you with:
 1. `token`. This token will let you access your projects & data;
 2. `project_ID`. This ID will be used to associate the content you send to Membrace with your specific project, which in turn lets us know what kind of moderation to perform on the content.
 
+## Access to API
+In order to use Membrace API you need an Access Token. To receive it please contact us and describe
+the types of your content and list of violations you want to detect. You have to add this token
+to each request in **Authorization** HTTP-header.
+
+Keep your Access Token in a safe storage and do not publish it anywhere. If the Access Token has been compromised,
+please contact us immediately to drop it and issue a new one. Also, always use HTTPS protocol to keep the connection
+safe
+
 # Sending Content for Moderation
 ## Synchronous API
 Sync API implies that as soon as you send us your content, you immediately some kind of response. Responses may vary depending on the specifics of your project.
