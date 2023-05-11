@@ -6,7 +6,15 @@ toc_max_heading_level: 4
 
 ## Before you begin
 Your Account Manager will provide you with:
-1. `token`. This token will let you access your projects & data;
+1. `token`. This token will let you access your projects & data. You have to add thе token
+to each request in **Authorization** HTTP-header;
+
+:::caution
+
+Keep your token in a safe storage and do not publish it anywhere. If the token has been compromised, contact us immediately to drop it and issue a new one. Also, always use HTTPS protocol to keep the connection safe.
+
+:::
+
 2. `project_ID`. This ID will be used to associate the content you send to Membrace with your specific project, which in turn lets us know what kind of moderation to perform on the content.
 
 ## Synchronous API
