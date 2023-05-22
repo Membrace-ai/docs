@@ -40,7 +40,7 @@ If you have access to the deployment, checkout the branch you want to deploy and
 ```
 git checkout master
 git pull
-USE_SSH=true run deploy
+USE_SSH=true yarn deploy
 ```
 
 ### Problems?
