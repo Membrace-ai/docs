@@ -1,5 +1,5 @@
 ---
-toc_max_heading_level: 4
+hide_table_of_contents: true
 ---
 
 import Tabs from '@theme/Tabs';
