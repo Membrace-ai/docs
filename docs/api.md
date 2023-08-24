@@ -60,9 +60,9 @@ Authorization: <token>
 }
 ```
 * `request_id` - String. Optional. Same ID as the one you've sent our way;
-* `item_id` - String. Auto generated UUID-4 string, ID in Membrace system.
+* `item_id` - String. Auto generated UUID-4 string, ID in Membrace system;
 * `status` - String. Moderation task status (`SUCCESS` or `FAILED`);
-* `result` - JSON. Result of moderation, structure specified for your project. Appears only if `status` is `SUCCESS`
+* `result` - JSON. Result of moderation, structure specified for your project. Appears only if `status` is `SUCCESS`;
 * `error` - JSON. Optional. Error message. Appears only if `status` returned `FAILED`. Possible types of moderation errors are given in the table:
 
 | Type of error             | Description                                         |
@@ -137,7 +137,7 @@ In this case `project_id = text`.
     }
 }
 ```
-    
+
 </TabItem>
 </Tabs>
 
@@ -330,7 +330,7 @@ Authorization: <token>
     "next_results": "177771999702"
 }
 ```
-* `has_more` – if the response contains more than the initial 100 items, this value will be set to `true`
+* `has_more` – if the response contains more than the initial 100 items, this value will be set to `true`.
 
 #### Example
 ```json

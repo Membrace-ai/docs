@@ -59,10 +59,10 @@ Authorization: <token>
 }
 ```
 * `request_id` - String. Opcional. Misma ID que que nos ha enviado;
-* `item_id` - String. Cadena UUID-4 generada automáticamente, ID en el sistema de Membrace.
-* `status` - String. Estado de la tarea de moderación (`ÉXITO` o `FALLO`);
-* `result` - JSON. Resultado de la moderación, estructura especificada para su proyecto. Solo aparece si el estado es `ÉXITO` <!-- Скорее всего некорректный перевод. -->
-* `error` - JSON. Optional. Error message. Appears only if `status` returned `FAILED`. Possible types of moderation errors are given in the table:
+* `item_id` - String. Cadena UUID-4 generada automáticamente, ID en el sistema de Membrace;
+* `status` - String. Estado de la tarea de moderación (`SUCCESS` o `FAILED`);
+* `result` - JSON. Resultado de la moderación, estructura especificada para su proyecto. Solo aparece si `status` es `SUCCESS`;
+* `error` - JSON. Opcional. Mensaje de error. Solo aparece si `status` es `FAILED`. Los posibles tipos de errores de moderación se detallan en la siguiente tabla:
 
 | Tipo de error             | Descripción                                                  |
 | ------------------------- | ------------------------------------------------------------ |
@@ -250,7 +250,7 @@ Authorization: <token>
 }
 ```
 * `request_id` - String. Opcional. Mismo ID que que nos ha enviado;
-* `item_id` - String. Cadena UUID-4 generada automáticamente, ID en el sistema de Membrace.
+* `item_id` - String. Cadena UUID-4 generada automáticamente, ID en el sistema de Membrace;
 * `status` - String. Estado de la tarea de moderación (solo valor `PENDING` para la API asincrónica).
 
 <Tabs>
@@ -330,7 +330,7 @@ Authorization: <token>
     "next_results": "177771999702"
 }
 ```
-* `has_more` – si la respuesta contiene más de 100 elementos iniciales, este valor se establecerá como `true`
+* `has_more` – si la respuesta contiene más de 100 elementos iniciales, este valor se establecerá como `true`.
 
 
 #### Ejemplo
