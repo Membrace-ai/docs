@@ -13,7 +13,7 @@ Clone this git repository to your computer and install all requirements:
 ```
 git clone git@github.com:Membrace-ai/docs.git
 cd docs
-yarn run install
+yarn install
 ```
 
 ### Build the docs locally
