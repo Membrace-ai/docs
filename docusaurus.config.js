@@ -19,7 +19,12 @@ const config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'es'],
+    locales: ['en', 'es', 'pt'],
+    localeConfigs: {
+      pt: {
+        htmlLang: 'pt-BR',
+      },
+    },
   },
 
   presets: [

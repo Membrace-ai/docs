@@ -5,26 +5,26 @@ hide_table_of_contents: true
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Integrar a través de la API
+# Integrar via API
 
-## Antes de comenzar
-Su Administrador de Cuenta le brindará:
-1. `token`. Este token (ficha digital) le permitirá acceder a sus proyectos y datos. Usted tiene que agregar el token a cada pedido en el encabezado HTTP **Authorization**;
+## Antes de começar
+O(a) gerente da sua conta fornecerá:
+1. `token`. Este token acessará os seus projetos e dados. Você precisará adicionar o token a cada requisição no header HTTP **Authorization**;
 
-:::precaución
+:::caution
 
-Mantenga su token en un lugar seguro y no lo divulgue. Si el token ha sido comprometido, contáctenos inmediatamente para descartarlo y emitir uno nuevo. Además, siempre utilice el protocolo HTTPS para mantener la conexión segura.
+Guarde o seu token em um armazenamento seguro e não o publique em lugar algum. Se o token for comprometido, entre em contato conosco imediatamente para descartá-lo e criar um novo. Além disso, sempre use o protocolo HTTPS para manter a conexão segura.
 
 :::
 
-2. `project_ID`. Este ID se utilizará para asociar el contenido que usted envía a Membrace con su proyecto específico, el cual llegado el momento nos permite saber qué tipo de moderación debemos realizar en el contenido.
+2. `project_ID`. Esse ID será usado para associar o conteúdo que você enviar para a Membrace com o seu projeto, o que nos comunica qual tipo de moderação devemos usar no conteúdo.
 
 <Tabs>
-<TabItem value="synch_api" label="API sincrónica" default>
+<TabItem value="synch_api" label="API Síncrona" default>
 
-Sincronizar API implica que tan pronto como usted nos manda su contenido, obtiene inmediatamente un tipo de respuesta. Las respuestas pueden variar según las especificaciones de su proyecto.
+A API síncrona significa que, assim que você nos enviar o seu conteúdo, você terá uma resposta imediata. As respostas podem variar conforme os detalhes do seu projeto.
 
-### Estructura
+### Estrutura
 
 ```
 POST /v1/item/process
@@ -32,7 +32,7 @@ Host: https://api.membrace.ai
 Authorization: <token>
 ```
 
-### Carga de trabajo
+### Payload
 ```json
 {
     "request_id": "42",
@@ -41,12 +41,12 @@ Authorization: <token>
     "content": <content>
 }
 ```
-* `request_id` - String. Opcional. Representa la ID del elemento de contenido en su sistema;
-* `project_id` - String. Requerida;
-* `project_version` - String. Requerida. Versión del Proyecto, valor inicial "1";
-* `content` - JSON. Requerido. Su contenido, estructurado de acuerdo a su proyecto.
+* `request_id` - String. Opcional. Representa o ID do item do conteúdo no seu sistema;
+* `project_id` - String. Obrigatório;
+* `project_version` - String. Obrigatório. Versão do projeto, valor inicial "1";
+* `content` - JSON. Obrigatório. O seu conteúdo, estruturado conforme seu projeto.
 
-### Response
+### Resposta
 ```json
 {
     "request_id": "42",
@@ -58,29 +58,28 @@ Authorization: <token>
     "error": <error>
 }
 ```
-* `request_id` - String. Opcional. Misma ID que que nos ha enviado;
-* `item_id` - String. Cadena UUID-4 generada automáticamente, ID en el sistema de Membrace.
-* `status` - String. Estado de la tarea de moderación (`ÉXITO` o `FALLO`);
-* `result` - JSON. Resultado de la moderación, estructura especificada para su proyecto. Solo aparece si el estado es `ÉXITO` <!-- Скорее всего некорректный перевод. -->
-* `error` - JSON. Optional. Error message. Appears only if `status` returned `FAILED`. Possible types of moderation errors are given in the table:
+* `request_id` - String. Opcional. O mesmo ID que você nos enviou;
+* `item_id` - String. UUID-4 gerado automaticamente, ID no sistema da Membrace.
+* `status` - String. Status da tarefa de moderação (`SUCCESS` or `FAILED`);
+* `result` - JSON. Resultado da moderação, estrutura especificada para o seu projeto. Aparece apenas se o status for `SUCCESS`
+* `error` - JSON. Opcional. Mensagem de erro. Aparece apenas se o status retornar como `FAILED`. Veja os possíveis tipos de erros de moderação na tabela a seguir:
 
-| Tipo de error             | Descripción                                                  |
-| ------------------------- | ------------------------------------------------------------ |
-| `DOWNLOAD_ERROR`          | Fallo al cargar la imagen mediante el enlace.                |
-| `MODERATION_ERROR`        | Uno de los módulos de moderación no funcionó correctamente.  |
-| `INTERNAL_ERROR `         | Cualquier otra clase de problema con el servicio.            |
+| Tipo de erro              | Descrição                                             |
+| ------------------------- | ----------------------------------------------------- |
+| `DOWNLOAD_ERROR`          | Falha em carregar a imagem pelo link.                 |
+| `MODERATION_ERROR`        | Um dos módulos de moderação funcionou incorretamente. |
+| `INTERNAL_ERROR `         | Algum outro problema com o serviço.                   |
 
-Si usted obtuvo el tipo de error `MODERATION_ERROR` o `INTERNAL_ERROR`, contacte al servicio de soporte.
+Se você recebeu o erro `MODERATION_ERROR` ou `INTERNAL_ERROR`, entre em contato com o serviço de suporte.
 
-### Ejemplos
+### Exemplos
 
 <Tabs>
 <TabItem value="text" label="Texto" default>
 
-En este caso `project_id = text`.
+Nesse caso `project_id = text`.
 
-#### Pedido
-<!-- в примере надо перевести "Hello world" -->
+#### Requisição
 
 ```json
 {
@@ -88,13 +87,13 @@ En este caso `project_id = text`.
     "project_id": "text",
     "project_version": "1",
     "content": {
-        "text": "Hello world"
+        "text": "Olá mundo"
     }
 }
 ```
 
 <Tabs className="button-tabs">
-<TabItem value="success" label="Responce (success)" default>
+<TabItem value="success" label="Resposta (sucesso)" default>
 
 ```json
 {
@@ -121,7 +120,7 @@ En este caso `project_id = text`.
 }
 ```
 </TabItem>
-<TabItem value="failed" label="Respuesta (fallida)">
+<TabItem value="failed" label="Resposta (falha)">
 
 ```json
 {
@@ -137,14 +136,14 @@ En este caso `project_id = text`.
     }
 }
 ```
-    
+
 </TabItem>
 </Tabs>
 
 </TabItem>
-<TabItem value="image" label="Imagen">
+<TabItem value="image" label="Imagem">
 
-En este caso `project_id = image`.
+Nesse caso `project_id = image`.
 
 #### Request
 
@@ -159,7 +158,7 @@ En este caso `project_id = image`.
 }
 ```
 <Tabs className="button-tabs">
-<TabItem value="success" label="Response (success)" default>
+<TabItem value="success" label="Resposta (sucesso)" default>
 
 ```json
 {
@@ -182,7 +181,7 @@ En este caso `project_id = image`.
 ```
 
 </TabItem>
-<TabItem value="failed" label="Respuesta (fallida)">
+<TabItem value="failed" label="Resposta (falha)">
 
 ```json
 {
@@ -210,23 +209,23 @@ En este caso `project_id = image`.
 </Tabs>
 
 </TabItem>
-<TabItem value="asynch_api" label="API asincrónica">
+<TabItem value="asynch_api" label="API Assíncrona">
 
-La API asincrónica requiere que realice un pedido por separado a fines de recibir los resultados de moderación.
-En nuestra API asincrónica, hay dos tipos de pedidos separados:
-- [Caso 1](#sending-async): usted envía el contenido a Membrace;
-- [Caso 2](#retrieving-async): usted solicita los resultados para los elementos procesados.
+A API assíncrona exige que você faça uma requisição separada para receber os resultados da moderação.
+Na nossa API assíncrona, temos duas requisições separadas:
+- [Evento 1](#sending-async): você envia o conteúdo para a Membrace;
+- [Evento 2](#retrieving-async): você solicita resultados para os itens processados.
 
-### Caso 1. Envío de contenido para la moderación {#sending-async}
+### Evento 1. Enviar Conteúdo para Moderação
 
-#### Estructura
+#### Estrutura
 ```
 POST /v1/item/process
 Host: https://api.membrace.ai
 Authorization: <token>
 ```
 
-#### Carga de trabajo
+#### Payload
 ```json
 {
     "request_id": "42",
@@ -235,12 +234,12 @@ Authorization: <token>
     "content": <content>
 }
 ```
-* `request_id` - String. Opcional. Esta cadena representa el ID del elemento de contenido en su sistema;
-* `project_id` - String. Requerida;
-* `project_version` - String. Requerida. Versión del Proyecto, valor inicial "1";
-* `content` - JSON. Requerido. Su contenido, estructurado de acuerdo a su proyecto.
+* `request_id` - String. Opcional. Representa o ID do item do conteúdo no seu sistema;
+* `project_id` - String. Obrigatório;
+* `project_version` - String. Obrigatório. Versão do projeto, valor inicial "1";
+* `content` - JSON. Obrigatório. O seu conteúdo, estruturado conforme seu projeto.
 
-#### Respuesta
+#### Resposta
 ```json
 {
     "request_id": "42",
@@ -250,28 +249,27 @@ Authorization: <token>
     "status": "PENDING"
 }
 ```
-* `request_id` - String. Opcional. Mismo ID que que nos ha enviado;
-* `item_id` - String. Cadena UUID-4 generada automáticamente, ID en el sistema de Membrace.
-* `status` - String. Estado de la tarea de moderación (solo valor `PENDING` para la API asincrónica).
+* `request_id` - String. Optional. Same ID as the one you've sent our way;
+* `item_id` - String. Auto generated UUID-4 string, ID in Membrace system;
+* `status` - String. Status da tarefa de moderação (único valor `PENDING` para a API assíncrona).
 
 <Tabs>
 <TabItem value="text" label="Texto" default>
 
-En este caso `project_id = text`.
+Nesse caso `project_id = text`.
 
-#### Pedido
-<!-- в примере надо перевести "Hello world" -->
+#### Requisição
 ```json
 {
     "request_id": "42",
     "project_id": "text",
     "project_version": "1",
     "content": {
-        "text": "Hello world"
+        "text": "Olá mundo"
     }
 }
 ```
-#### Respuesta
+#### Resposta
 ```json
 {
     "request_id": "42",
@@ -283,11 +281,11 @@ En este caso `project_id = text`.
 ```
 
 </TabItem>
-<TabItem value="image" label="Imagen">
+<TabItem value="image" label="Imagem">
 
-In this case `project_id = image`.
+Nesse caso `project_id = image`.
 
-#### Pedido
+#### Requisição
 ```json
 {
     "request_id": "42",
@@ -299,7 +297,7 @@ In this case `project_id = image`.
 }
 ```
 
-#### Respuesta
+#### Resposta
 ```json
 {
     "request_id": "42",
@@ -312,10 +310,10 @@ In this case `project_id = image`.
 </TabItem>
 </Tabs>
 
-### Caso 2. Recuperar los resultados {#retrieving-async}
-A fines de obtener los resultados, se recomienda que los obtenga ordenados por tiempo de completado. Usted recibirá los primeros elementos N como respuesta, con N dependiendo de las especificaciones de su proyecto.
-A fines de recibir los próximos elementos, por favor guarde el `next_results` y utilícelo como el `next_results` variable.
-Usted puede saltar esta variable en la primera solicitud o utilizar los filtros datetime.
+### Evento 2. Coletando os Resultados {#retrieving-async}
+Para obter os resultados, recomendamos que você faça uma requisição GET ordenados por momento de conclusão. Você receberá os primeiros N itens como a resposta, com N dependendo dos detalhes do seu projeto.
+Para receber os próximos itens, salve `next_results` e use como a variável `next_results`.
+Você pode pular esta variável na primeira requisição ou usar filtros datetime.
 
 ```
 GET /v1/item/results?project_id=<project_id>&project_version=<project_version>&status=finished&next_results=<next_results>
@@ -323,7 +321,7 @@ Host: https://api.membrace.ai
 Authorization: <token>
 ```
 
-#### Respuesta
+#### Resposta
 ```json
 {
     "items": [<list_of_items>],
@@ -331,10 +329,9 @@ Authorization: <token>
     "next_results": "177771999702"
 }
 ```
-* `has_more` – si la respuesta contiene más de 100 elementos iniciales, este valor se establecerá como `true`
+* `has_more` – se a resposta tiver mais do que os 100 itens iniciais, este valor será configurado como `true`
 
-
-#### Ejemplo
+#### Exemplo
 ```json
 {
     "items": [
@@ -367,6 +364,3 @@ Authorization: <token>
 ```
 </TabItem>
 </Tabs>
-
-
-
