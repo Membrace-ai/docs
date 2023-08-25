@@ -1,0 +1,10 @@
+{
+  "version.label": {
+    "message": "Siguiente",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.How to get a solution": {
+    "message": "Cómo obtener una solución",
+    "description": "The label for category How to get a solution in sidebar docsSidebar"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version.label": {
+    "message": "hitl",
+    "description": "The label for version hitl"
+  },
+  "sidebar.docsSidebar.category.How to get a solution": {
+    "message": "Como obter uma solução",
+    "description": "The label for category How to get a solution in sidebar docsSidebar"
+  }
+}

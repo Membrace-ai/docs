@@ -19,7 +19,12 @@ const config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ru'],
+    locales: ['en', 'es', 'pt'],
+    localeConfigs: {
+      pt: {
+        htmlLang: 'pt-BR',
+      },
+    },
   },
 
   presets: [
@@ -67,10 +72,10 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          /*{
+          {
             type: 'localeDropdown',
             position: 'right',
-          },*/
+          },
         ],
       },
       /*footer: {
