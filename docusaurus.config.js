@@ -31,9 +31,6 @@ const config = {
       pt: {
         htmlLang: 'pt-BR',
       },
-      es: {
-        path: '/es/'
-      },
     },
   },
 
