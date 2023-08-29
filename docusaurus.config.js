@@ -4,6 +4,13 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+function getSiteUrl() {
+  switch(process.env.DOCUSAURUS_CURRENT_LOCALE) {
+    case "es": return "https://membrace.ai/es/";
+    default: return "https://membrace.ai/";
+  }
+}
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   noIndex: true,
@@ -23,6 +30,9 @@ const config = {
     localeConfigs: {
       pt: {
         htmlLang: 'pt-BR',
+      },
+      es: {
+        path: '/es/'
       },
     },
   },
@@ -63,7 +73,7 @@ const config = {
         logo: {
           alt: 'Membrace',
           src: 'https://doc-binary.s3.yandex.net/src/membrace/logo-dark.svg',
-          href: 'https://membrace.ai/'
+          href: getSiteUrl()
         },
         items: [
           {
