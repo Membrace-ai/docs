@@ -317,7 +317,7 @@ A fines de recibir los próximos elementos, por favor guarde el `next_results` y
 Usted puede saltar esta variable en la primera solicitud o utilizar los filtros datetime.
 
 ```
-GET /v1/item/results?project_id=<project_id>&project_version=<project_version>&status=finished&next_results=<next_results>
+GET /v1/item/results?project_id=<project_id>&version=<project_version>&status=finished&next_results=<next_results>
 Host: https://api.membrace.ai
 Authorization: <token>
 ```

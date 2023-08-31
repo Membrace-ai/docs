@@ -317,7 +317,7 @@ In order to receive the next items, please save the `next_results` & use it as t
 You can skip this variable on the first query or use datetime filters.
 
 ```
-GET /v1/item/results?project_id=<project_id>&project_version=<project_version>&status=finished&next_results=<next_results>
+GET /v1/item/results?project_id=<project_id>&version=<project_version>&status=finished&next_results=<next_results>
 Host: https://api.membrace.ai
 Authorization: <token>
 ```
